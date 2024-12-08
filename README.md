@@ -1,3 +1,36 @@
+# DLT ETL Pipeline - GCS to BigQuery
+
+This project demonstrates an ETL pipeline using [DLT (Data Loading Tool)](https://github.com/Delta-ML/dlt), Google Cloud Storage (GCS), and BigQuery. The pipeline extracts data from a CSV file in GCS, applies minimal transformations, and loads the transformed data into a BigQuery table.
+
+## Project Overview
+
+The project performs the following steps:
+1. **Extract**: Read CSV data from a file stored in a GCS bucket.
+2. **Transform**: Apply minimal transformations (e.g., adding a timestamp field).
+3. **Load**: Load the transformed data into a BigQuery table.
+
+This is a simple example of using DLT to integrate data from GCS to BigQuery with an optional transformation.
+
+## Requirements
+
+To run this project, you need the following:
+
+- **Python 3.x** (preferably 3.7 or higher)
+- **Google Cloud SDK** installed and configured
+- A **Google Cloud Platform** (GCP) account
+- Required Python libraries:
+  - `dlt`
+  - `google-cloud-storage`
+  - `csv`
+  - `datetime`
+
+You can install the required dependencies with:
+
+```bash
+pip install -r requirements.txt
+
+
+=============================================================================================================================
 # dlt-simple
 **README.md**
 
